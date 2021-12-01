@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.HomeFragment">
+
+    <LinearLayout
+        android:gravity="top"
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/status_bar"
+            android:gravity="center"
+            android:elevation="10dp"
+            android:padding="20dp"
+            android:text="LỊCH CÁ NHÂN"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            tools:ignore="TextContrastCheck" />
+
+        <LinearLayout
+            android:id="@+id/calendarWork"
+            android:layout_marginHorizontal="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:elevation="3dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical" />
+
+    </LinearLayout>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/addCV"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="25dp"
+        android:clickable="true"
+        android:backgroundTint="@color/status_bar"
+        android:backgroundTintMode="add"
+        android:focusableInTouchMode="true"
+        android:src="@drawable/ic_round_add_24"
+        app:backgroundTint="@color/status_bar"
+        app:fabSize="normal"
+        app:maxImageSize="40dp"
+        app:rippleColor="#51FFFFFF"
+        app:tint="@color/white"
+        tools:ignore="RtlHardcoded,SpeakableTextPresentCheck"
+        android:focusable="true" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

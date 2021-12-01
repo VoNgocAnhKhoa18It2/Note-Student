@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/item"
+    android:layout_width="160dp"
+    android:elevation="3dp"
+    android:background="@drawable/item_today_bg"
+    android:orientation="vertical"
+    android:layout_height="215dp">
+
+    <ImageView
+        android:id="@+id/image"
+        android:background="@drawable/image_bg"
+        android:elevation="5dp"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_round_school_24"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginBottom="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:paddingVertical="2dp"
+            android:id="@+id/txtTitle"
+            android:fontFamily="@font/signika_negative"
+            android:textColor="#777777"
+            android:textStyle="bold"
+            android:text="Tương Tác Người Máy(1) | LT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingVertical="2dp"
+            android:id="@+id/txtTeacher"
+            android:fontFamily="@font/signika_negative"
+            android:textColor="#9f9f9f"
+            android:textStyle="bold"
+            android:text="Nguyễn Văn A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:paddingVertical="2dp"
+            android:id="@+id/txtTime"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/signika_negative"
+            android:textStyle="bold"
+            android:textColor="#9f9f9f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="7h30->9h30 | T2" />
+
+        <TextView
+            android:paddingVertical="2dp"
+            android:id="@+id/txtLoacation"
+            android:gravity="center_vertical"
+            android:fontFamily="@font/signika_negative"
+            android:textStyle="bold"
+            android:textColor="#9f9f9f"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="B204" />
+
+    </LinearLayout>
+
+</LinearLayout>

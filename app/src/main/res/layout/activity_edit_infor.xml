@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingVertical="10dp"
+    android:layout_height="match_parent"
+    android:background="#F6F6F6"
+    tools:context=".activity.EditInforActivity">
+
+    <EditText
+        android:id="@+id/txtEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingHorizontal="10dp"
+        android:imeOptions="actionDone"
+        android:paddingVertical="20dp"
+        android:textColor="@color/black"
+        android:textColorHighlight="@color/black"
+        android:textColorLink="@color/black"
+        android:textSize="15sp"
+        tools:ignore="SpeakableTextPresentCheck" />
+</LinearLayout>
