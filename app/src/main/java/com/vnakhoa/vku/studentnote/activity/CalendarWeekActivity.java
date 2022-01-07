@@ -129,7 +129,7 @@ public class CalendarWeekActivity extends AppCompatActivity {
     }
 
     private SampleObject converToJson(JSONObject module) throws JSONException {
-        String[] arr = new String[7];
+        String[] arr = {"","","","","","",""};
         String[] descriptions = { "LT", "TH", "BU" };
         JSONArray jsonArray = module.getJSONArray("calendars");
         for (int i=0; i < jsonArray.length(); i++) {
@@ -144,7 +144,7 @@ public class CalendarWeekActivity extends AppCompatActivity {
 
         return new SampleObject(
                 module.getString("nameModule"),
-                "\n"+arr[0]+"\n",
+                arr[0],
                 arr[1],
                 arr[2],
                 arr[3],

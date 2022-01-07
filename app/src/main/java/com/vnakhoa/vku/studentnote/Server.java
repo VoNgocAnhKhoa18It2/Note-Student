@@ -8,7 +8,7 @@ public class Server {
     public static Retrofit getInstance() {
         if (retrofit == null) {
             retrofit = new Retrofit.Builder()
-                    .baseUrl("http://192.168.1.165:1201/")
+                    .baseUrl("https://student-note.herokuapp.com/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
         }

@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.content.Context;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.os.Build;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
@@ -13,8 +14,8 @@ import android.widget.ScrollView;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import androidx.annotation.RequiresApi;
 import androidx.core.content.res.ResourcesCompat;
 
 import com.vnakhoa.vku.studentnote.R;
@@ -303,14 +304,12 @@ public class TableMainLayout extends RelativeLayout {
         int tableBChildCount = ((TableRow)this.tableB.getChildAt(0)).getChildCount();;
 
         for(int x=0; x<(tableAChildCount+tableBChildCount); x++){
-
-            if(x==0){
+            this.headerCellsWidth[x] = Config.dpToPx(107,context);
+//            if(x==0){
 //                this.headerCellsWidth[x] = this.viewWidth(((TableRow)this.tableA.getChildAt(0)).getChildAt(x));
-                this.headerCellsWidth[x] = Config.dpToPx(107,context);
-            }else{
+//            }else{
 //                this.headerCellsWidth[x] = this.viewWidth(((TableRow)this.tableB.getChildAt(0)).getChildAt(x-1));
-                this.headerCellsWidth[x] = Config.dpToPx(107,context);
-            }
+//            }
 
         }
     }
@@ -400,6 +399,7 @@ public class TableMainLayout extends RelativeLayout {
     }
 
     // horizontal scroll view custom class
+    @RequiresApi(api = Build.VERSION_CODES.CUPCAKE)
     class MyHorizontalScrollView extends HorizontalScrollView{
 
         public MyHorizontalScrollView(Context context) {

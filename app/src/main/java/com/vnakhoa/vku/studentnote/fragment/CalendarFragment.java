@@ -93,13 +93,12 @@ public class CalendarFragment extends Fragment {
     }
 
     private SampleObject converToObject(CalendarDetail calendarSubject){
-        String[] arr = new String[7];
+        String[] arr = {"","","","","","",""};
         for (Work work : calendarSubject.getList()) {
             int position = (work.getDayOfWeek().equals("CN")) ? 6 : (Integer.parseInt(work.getDayOfWeek().substring(1))-2);
             arr[position] = work.getTime()
                     +"\n"+work.getLocation();
         }
-
         return new SampleObject(
                 calendarSubject.getTitle(),
                 "\n"+arr[0]+"\n",
